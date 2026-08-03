@@ -1,0 +1,58 @@
+openapi: 3.1.0
+info:
+  title: FIT4110 Service API
+  version: 0.1.0
+  description: Contract-first starter. Replace all placeholders before submission.
+servers:
+  - url: http://localhost:8000
+paths:
+  /health:
+    get:
+      operationId: getHealth
+      summary: Check service health
+      responses:
+        '200':
+          description: Service is ready
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Health'
+  /resources:
+    post:
+      operationId: createResource
+      summary: Create a resource
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateResourceRequest'
+      responses:
+        '201':
+          description: Created
+        '400':
+          description: Invalid request
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+components:
+  schemas:
+    Health:
+      type: object
+      required: [status]
+      properties:
+        status: { type: string, example: ok }
+    CreateResourceRequest:
+      type: object
+      required: [name]
+      properties:
+        name: { type: string, minLength: 1 }
+    Problem:
+      type: object
+      required: [type, title, status]
+      properties:
+        type: { type: string, format: uri-reference }
+        title: { type: string }
+        status: { type: integer }
+        detail: { type: [string, 'null'] }
