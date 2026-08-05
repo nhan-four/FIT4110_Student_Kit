@@ -15,3 +15,13 @@ flowchart LR
 ```
 
 Complete the template before Lab 02. “The whole Smart Campus system” is not a service boundary; name only the capability your team owns.
+
+---
+
+# Bản dịch tiếng Việt
+
+## Vì sao boundary phải có trước?
+
+Hệ thống AI dễ gặp lỗi tích hợp khi không ai thống nhất trách nhiệm: ai kiểm tra input, ai lưu dữ liệu, ai suy luận và ai xử lý lỗi. Ranh giới service giúp quyết định này rõ ràng trước khi code khiến thay đổi trở nên tốn kém.
+
+Bắt đầu bằng Service Boundary template. Xác định actor, trách nhiệm thuộc nhóm, trách nhiệm loại trừ, input/output, dependency và đường đi khi lỗi. Một boundary tốt cần giải thích được bằng một sơ đồ và kiểm thử qua một contract. Hoàn thành template trước Lab 02; toàn bộ Smart Campus không phải một service boundary—chỉ nêu capability nhóm bạn sở hữu.
