@@ -59,3 +59,34 @@ Read [Git Guide](03_Guides/Git_Guide.md) and [Submission](03_Guides/Submission.m
 ## Course principle
 
 **Contract is the shared promise; artefacts are the evidence.** Make every submission reproducible from a clean clone.
+
+---
+
+# Bản dịch tiếng Việt
+
+## Tổng quan học phần
+
+Đây là bộ hướng dẫn chính thức cho **FIT4110 – Dịch vụ kết nối & Công nghệ nền tảng**. Student Kit là bản đồ học phần; các repository Lab công khai là nơi thực hành. Mục tiêu là tạo ra bài làm có thể chạy lại, tích hợp và chấm từ một bản ZIP.
+
+## Vì sao sinh viên Khoa học máy tính / AI cần học nội dung này?
+
+Một mô hình chính xác, notebook hoặc pipeline dữ liệu chưa phải là sản phẩm. Để vận hành trong thực tế, nhóm cần ranh giới trách nhiệm rõ ràng, API ổn định, kiểm thử, môi trường chạy di động và cách khởi động các dịch vụ phụ thuộc. FIT4110 là cầu nối từ AI/dữ liệu/phần mềm sang dịch vụ có thể triển khai.
+
+## Bắt đầu nhanh
+
+1. Đọc Session 0 và hoàn thành kiểm tra môi trường.
+2. Làm theo quy trình học phần trước khi bắt đầu Lab.
+3. Clone repository starter công khai của Lab tương ứng.
+4. Tạo **một** repository public duy nhất tên `FIT4110_<MãSinhViên>`; lưu từng Lab trong thư mục riêng và nộp cùng một URL qua Google Sheet.
+
+## Hệ sinh thái Lab
+
+Lab 01 kiểm tra môi trường và ranh giới service; Lab 02 xây hợp đồng OpenAPI; Lab 03 kiểm thử bằng Postman/mock/Newman; Lab 04 đóng gói Docker; Lab 05 chạy nhiều service bằng Compose. Repository dành cho giảng viên không thuộc phạm vi sinh viên.
+
+## Quy trình nộp bài
+
+Clone starter → hoàn thành môi trường và Lab → tạo minh chứng → thêm vào thư mục Lab trong repository `FIT4110_<MãSinhViên>` → push → nộp **một URL** Google Sheet → giảng viên tải ZIP để chấm.
+
+## Nguyên tắc học phần
+
+**Contract là cam kết chung; artefact là minh chứng.** Mọi bài làm phải chạy lại được từ một bản clone sạch.
