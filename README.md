@@ -18,7 +18,7 @@ flowchart LR
 1. Read [Session 0](01_Getting_Started/SESSION0_Preparation.md) and complete the setup checks.
 2. Follow [the course workflow](01_Getting_Started/COURSE_WORKFLOW.md) before beginning any lab.
 3. Open the matching lab guide below; clone its public starter repository.
-4. Keep evidence as you work. When ready, move the remote to your own repository and submit its URL through the course Google Sheet.
+4. Create one portfolio repository named `FIT4110_<MãSinhViên>`, keep every lab in its own folder, and submit that one URL through the course Google Sheet.
 
 ## Lab ecosystem
 
@@ -38,9 +38,9 @@ The instructor-only setup repository is intentionally not required by students.
 flowchart TD
   A[Clone public lab repository] --> B[Complete setup and lab]
   B --> C[Generate evidence]
-  C --> D[Create personal GitHub repository]
-  D --> E[Change git remote]
-  E --> F[Push final work]
+  C --> D[One student repository]
+  D --> E[Add the lab folder]
+  E --> F[Push updates]
   F --> G[Submit repository URL in Google Sheet]
   G --> H[Instructor downloads ZIP for grading]
 ```

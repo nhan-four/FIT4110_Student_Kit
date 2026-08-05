@@ -6,6 +6,6 @@
 - [ ] `known-issues.md` reflects remaining limitations.
 - [ ] No `.env`, token, credential, or private data is tracked.
 - [ ] README tells a grader how to run and verify the work.
-- [ ] `origin` points to my personal public GitHub repository.
+- [ ] `origin` points to my one public semester repository: `FIT4110_<MãSinhViên>`.
 - [ ] Latest commit is pushed.
-- [ ] Exact repository URL is submitted through the course Google Sheet.
+- [ ] The same semester repository URL is submitted through the course Google Sheet.
