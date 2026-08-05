@@ -14,6 +14,10 @@
 |---|---|---|---|
 |  |  |  |  |
 
+## Bản dịch tiếng Việt
+
+Ghi nhóm, owner, vấn đề, phạm vi sở hữu/loại trừ, actor, input/output, trách nhiệm khi lỗi, dữ liệu, dependency, API dự kiến và các quyết định còn mở.
+
 ## Responsibilities and failure behavior
 
 - The service must:

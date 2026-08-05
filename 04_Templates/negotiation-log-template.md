@@ -11,3 +11,7 @@
 - Consumer representative/date:
 - Witness/instructor (if required):
 - Known compatibility risks:
+
+## Bản dịch tiếng Việt
+
+Biên bản phải ghi ngày, bối cảnh, lựa chọn, quyết định, lý do, tác động contract và xác nhận của provider/consumer. Cuối file ghi version contract, đại diện ký, witness và rủi ro tương thích.
