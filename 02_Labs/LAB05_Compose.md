@@ -1,24 +1,19 @@
 # Lab 05 — Docker Compose
 
-Use [FIT4110_lab05_docker_compose](https://github.com/TrangLe1912/FIT4110_lab05_docker_compose). Compose expresses the runnable architecture: services, networks, configuration, startup checks, and persistent data.
+**Purpose:** extend a single container into a reproducible multi-service stack with networks, configuration, readiness, and end-to-end tests.
 
-```mermaid
-flowchart LR
-  Client --> API[API :8000]
-  API --> AI[AI service :9000]
-  API --> DB[(PostgreSQL)]
-  API --- N[team-internal network]
-  AI --- N
-  DB --- N
-```
+Use [FIT4110_lab05_docker_compose](https://github.com/TrangLe1912/FIT4110_lab05_docker_compose) as the authoritative guide. The target stack contains at least API, AI/worker, and database services; students complete the source `RUN_COMPOSE.md`, readiness checklist, health evidence, Newman report, and pushed image tags.
 
-Copy `.env.example` to a local `.env`; do not commit it. Run `docker compose up -d --build`, inspect `docker compose ps` and logs, exercise API and AI health endpoints, and run the Compose test target if supplied.
-
-> Source compatibility note: the current starter declares an external `class-net`, so create it first if it is not provided (`docker network create class-net`). Its published Compose test script is a TODO placeholder; copy/adapt your Lab 04 collection and document the actual Newman command/report. The API healthcheck may also need a Python-based check if the image does not include `curl`.
+Compatibility note for the current starter: its Compose file declares an external `class-net`, so create that network first if it is absent. Then verify/fix the healthcheck commands, AI runtime dependencies and port exposure, and the TODO `test:compose` command before claiming the stack is ready. The starter is a learning baseline, not proof that every supplied command already passes unchanged.
 
 ---
-## Bản dịch tiếng Việt
 
-Compose mô tả kiến trúc chạy được: service, network, cấu hình, healthcheck và dữ liệu bền vững. Sao chép `.env.example` thành `.env` nhưng không commit file này; chạy `docker compose up -d --build`, kiểm tra `ps`/logs, health API/AI và readiness database. Starter hiện yêu cầu external `class-net`; tạo network nếu máy chưa có. Script test Compose hiện là placeholder, cần ghi rõ lệnh Newman thực tế và report.
+## Bản tiếng Việt
 
-Deliverables: compose file, `.env.example`, run guide, evidence of each health check, architecture explanation, image tags, test report, and readiness checklist.
+# Lab 05 — Docker Compose
+
+**Mục đích:** mở rộng một container thành stack đa service có thể tái lập, gồm network, cấu hình, readiness và kiểm thử end-to-end.
+
+Dùng [FIT4110_lab05_docker_compose](https://github.com/TrangLe1912/FIT4110_lab05_docker_compose) làm hướng dẫn chính thức. Stack mục tiêu có ít nhất API, AI/worker và database; sinh viên hoàn thành `RUN_COMPOSE.md`, readiness checklist, minh chứng health, Newman report và image tag đã push theo repo gốc.
+
+Lưu ý tương thích với starter hiện tại: Compose file khai báo external `class-net`, vì vậy cần tạo network này trước nếu máy chưa có. Sau đó kiểm tra/sửa healthcheck, runtime dependency và port của AI service, cùng lệnh `test:compose` đang là TODO trước khi kết luận stack đã sẵn sàng. Starter là nền tảng thực hành, không phải bằng chứng rằng mọi lệnh cung cấp sẵn đều chạy nguyên trạng.

@@ -1,6 +1,6 @@
 # FIT4110 — Student Kit
 
-Official, semester-long guide for **FIT4110 – Dịch vụ kết nối & Công nghệ nền tảng**. This kit is the course map, not a replacement for the lab repositories: use it to understand *why* each lab exists, start correctly, and submit a reproducible repository.
+Official, semester-long guide for **FIT4110 – Dịch vụ kết nối & Công nghệ nền tảng**. This kit is the course map, not a replacement for the lab repositories. For technical tasks, artefacts, and lab-specific grading criteria, the linked TrangLe1912 repository is authoritative; this Kit intentionally changes only the submission workflow.
 
 ## Why this matters for CS / AI students
 
@@ -29,6 +29,7 @@ flowchart LR
 | Lab 03 | [FIT4110_lab03_postman_mock_testing](https://github.com/TrangLe1912/FIT4110_lab03_postman_mock_testing) | Postman tests, mock, Newman report |
 | Lab 04 | [FIT4110_lab04_docker_packaging](https://github.com/TrangLe1912/FIT4110_lab04_docker_packaging) | Dockerfile, runnable image, evidence |
 | Lab 05 | [FIT4110_lab05_docker_compose](https://github.com/TrangLe1912/FIT4110_lab05_docker_compose) | reproducible multi-service stack |
+| Lab 06 | No separate public starter currently listed | integration handshake + Plug-a-thon evidence |
 
 The instructor-only setup repository is intentionally not required by students.
 
@@ -66,7 +67,7 @@ Read [Git Guide](03_Guides/Git_Guide.md) and [Submission](03_Guides/Submission.m
 
 ## Tổng quan học phần
 
-Đây là bộ hướng dẫn chính thức cho **FIT4110 – Dịch vụ kết nối & Công nghệ nền tảng**. Student Kit là bản đồ học phần; các repository Lab công khai là nơi thực hành. Mục tiêu là tạo ra bài làm có thể chạy lại, tích hợp và chấm từ một bản ZIP.
+Đây là bộ hướng dẫn chính thức cho **FIT4110 – Dịch vụ kết nối & Công nghệ nền tảng**. Student Kit là bản đồ học phần; các repository Lab công khai của TrangLe1912 là nguồn chính thức cho nhiệm vụ kỹ thuật, artefact và tiêu chí riêng của từng bài. Kit này chỉ chủ động thay đổi quy trình nộp bài. Mục tiêu là tạo ra bài làm có thể chạy lại, tích hợp và chấm từ một bản ZIP.
 
 ## Vì sao sinh viên Khoa học máy tính / AI cần học nội dung này?
 
@@ -81,7 +82,7 @@ Một mô hình chính xác, notebook hoặc pipeline dữ liệu chưa phải l
 
 ## Hệ sinh thái Lab
 
-Lab 01 kiểm tra môi trường và ranh giới service; Lab 02 xây hợp đồng OpenAPI; Lab 03 kiểm thử bằng Postman/mock/Newman; Lab 04 đóng gói Docker; Lab 05 chạy nhiều service bằng Compose. Repository dành cho giảng viên không thuộc phạm vi sinh viên.
+Lab 01 kiểm tra môi trường và ranh giới service; Lab 02 xây contract REST OpenAPI hoặc event contract sơ bộ tùy loại cặp; Lab 03 kiểm thử bằng Postman/mock/Newman; Lab 04 đóng gói Docker; Lab 05 chạy nhiều service bằng Compose; Lab 06 tích hợp Plug-a-thon theo thông báo của giảng viên. Repository dành cho giảng viên không thuộc phạm vi sinh viên.
 
 ## Quy trình nộp bài
 

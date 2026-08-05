@@ -1,15 +1,19 @@
 # Lab 01 — Setup and evidence
 
-**Goal:** establish a reproducible workstation and describe the service boundary before implementation.
+**Purpose:** prepare the workstation, verify the toolchain, generate environment evidence, and define the first service boundary.
 
-Use [FIT4110_setup](https://github.com/TrangLe1912/FIT4110_setup). Run its setup, image-pull, smoke-test, and evidence scripts appropriate to your operating system. Complete `evidence/buoi-01/checklist.md`, `known-issues.md`, and the service-boundary document.
+Use [FIT4110_setup](https://github.com/TrangLe1912/FIT4110_setup) as the authoritative technical guide. Run the supplied `pull_all`, `smoke_test`, and `collect_session01_evidence` scripts for your operating system; the source repository does not provide a separate setup script. Complete every file listed in its `evidence/buoi-01/` checklist.
 
-Deliverables: tool versions, Docker/Compose results, hello-world and smoke-test outputs, Git log, known issues, and a completed service boundary. Then apply the [Submission workflow](../03_Guides/Submission.md).
-
-Quality bar: a grader can see what ran, on which machine/tool versions, and what remains unresolved.
+Only the submission method changes: ignore the source repository's GitHub Classroom steps and use this Kit's [single-repository workflow](../03_Guides/Submission.md).
 
 ---
 
-## Bản dịch tiếng Việt
+## Bản tiếng Việt
 
-**Mục tiêu:** thiết lập môi trường có thể lặp lại và mô tả ranh giới service trước khi triển khai. Dùng starter `FIT4110_setup`, chạy các script cài đặt, pull image, smoke test và thu minh chứng phù hợp hệ điều hành. Lưu tool versions, kết quả Docker/Compose, hello-world, smoke test, Git log, known issues và service boundary vào `01_Setup/` trong portfolio. Bài đạt yêu cầu khi người chấm thấy rõ lệnh đã chạy, phiên bản công cụ/máy và các vấn đề còn tồn tại.
+# Lab 01 — Thiết lập môi trường và minh chứng
+
+**Mục đích:** chuẩn bị máy học tập, kiểm tra toolchain, sinh minh chứng môi trường và xác định service boundary đầu tiên.
+
+Dùng [FIT4110_setup](https://github.com/TrangLe1912/FIT4110_setup) làm hướng dẫn kỹ thuật chính thức. Chạy các script `pull_all`, `smoke_test` và `collect_session01_evidence` tương ứng với hệ điều hành; repo gốc không có script cài đặt riêng. Hoàn thành đầy đủ các file được liệt kê trong checklist `evidence/buoi-01/` của repo gốc.
+
+Chỉ thay đổi cách nộp bài: bỏ qua các bước GitHub Classroom trong repo gốc và dùng [quy trình một repository duy nhất](../03_Guides/Submission.md) của Student Kit.

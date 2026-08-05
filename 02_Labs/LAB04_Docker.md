@@ -1,18 +1,19 @@
 # Lab 04 — Docker packaging
 
-Use [FIT4110_lab04_docker_packaging](https://github.com/TrangLe1912/FIT4110_lab04_docker_packaging). A container is valuable when the service starts the same way on another machine, not merely when `docker build` succeeds.
+**Purpose:** package the Lab 03 service so that it starts reproducibly in a container and still satisfies the agreed contract.
 
-```mermaid
-flowchart LR
-  S[Source + requirements] --> DF[Dockerfile] --> I[Image] --> C[Container]
-  C --> H[/health 200/] --> T[Newman on container]
-```
+Use [FIT4110_lab04_docker_packaging](https://github.com/TrangLe1912/FIT4110_lab04_docker_packaging) as the authoritative guide. The source requires a buildable Dockerfile, non-root runtime user, `/health`, environment-based configuration, Lab 03 Postman/Newman tests against the container, XML/HTML reports, evidence, and a pushed registry image tag/link. Complete its readiness and submission checklists.
 
-Deliverables: Dockerfile, `.dockerignore`, `.env.example`, run guide, contract, Postman collection/environment, report, and build/run/health evidence. Build with a meaningful tag, run as a non-root user where feasible, and retest the container with Lab 03’s collection.
-
-Read [Docker Guide](../03_Guides/Docker_Guide.md) before cleanup. Never run broad pruning commands on a shared machine unless you understand what they remove.
+Read the [Docker Guide](../03_Guides/Docker_Guide.md) only for supporting explanations; source Lab 04 requirements take precedence.
 
 ---
-## Bản dịch tiếng Việt
 
-Docker có giá trị khi service chạy nhất quán trên máy khác. Nộp Dockerfile, `.dockerignore`, `.env.example`, run guide, contract, collection/environment, report và minh chứng build/run/health. Build tag rõ, ưu tiên non-root, chạy lại test Lab 03 trên container và không cleanup diện rộng trên máy dùng chung.
+## Bản tiếng Việt
+
+# Lab 04 — Đóng gói bằng Docker
+
+**Mục đích:** đóng gói service Lab 03 để service khởi động tái lập được trong container và vẫn đáp ứng contract đã thống nhất.
+
+Dùng [FIT4110_lab04_docker_packaging](https://github.com/TrangLe1912/FIT4110_lab04_docker_packaging) làm hướng dẫn chính thức. Repo gốc yêu cầu Dockerfile build được, runtime user non-root, endpoint `/health`, cấu hình qua environment, chạy lại Postman/Newman Lab 03 trên container, report XML/HTML, minh chứng và tag/link registry image đã push. Hoàn thành readiness checklist và submission checklist trong repo gốc.
+
+[Docker Guide](../03_Guides/Docker_Guide.md) chỉ giải thích bổ sung; yêu cầu của repo Lab 04 được ưu tiên.
