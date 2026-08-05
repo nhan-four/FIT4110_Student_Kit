@@ -11,3 +11,7 @@ Use the lab-specific criteria where supplied by the source repository; this cros
 | Collaboration | negotiation and hand-offs recorded | roles visible | integration responsibility unclear |
 
 The instructor applies the announced weighting. A visually impressive demo cannot compensate for an unreproducible repository.
+
+## Bản dịch tiếng Việt
+
+Giảng viên áp dụng trọng số đã công bố. Demo đẹp không thể bù cho repository không thể tái hiện. Chấm boundary/contract, kiểm chứng, runtime, documentation/evidence và collaboration theo mức Excellent, Satisfactory hoặc Needs work.

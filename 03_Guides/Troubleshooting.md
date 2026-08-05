@@ -10,3 +10,7 @@
 | Push rejected | `git remote -v`; `git status` | Ensure `origin` is your personal repository and pull/rebase only after understanding divergence. |
 
 Record unresolved problems in `known-issues.md`: symptom, command, evidence, attempted fix, owner, and next action. A documented limitation is better than a silent omission.
+
+## Bản dịch tiếng Việt
+
+Ghi lỗi chưa xử lý vào `known-issues.md` gồm hiện tượng, lệnh tái hiện, minh chứng, cách đã thử, người phụ trách và bước tiếp theo. Lỗi được mô tả rõ tốt hơn lỗi bị bỏ qua.

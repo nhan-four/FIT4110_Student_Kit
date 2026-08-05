@@ -10,3 +10,7 @@ docker logs fit4110-service
 ```
 
 For Compose: `docker compose up -d --build`, `docker compose ps`, and `docker compose logs -f`. Stop only your stack with `docker compose down`. `docker compose down -v` also removes that stack’s volumes; use it only when you intend to discard its data.
+
+## Bản dịch tiếng Việt
+
+Docker đóng gói ứng dụng cùng dependency runtime. Image phải tái lập được, có cấu hình qua environment, health endpoint và log rõ. Với Compose, chạy build/up, kiểm tra ps/logs; `down -v` xoá volume nên chỉ dùng khi muốn xoá dữ liệu.

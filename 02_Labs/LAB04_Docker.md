@@ -11,3 +11,8 @@ flowchart LR
 Deliverables: Dockerfile, `.dockerignore`, `.env.example`, run guide, contract, Postman collection/environment, report, and build/run/health evidence. Build with a meaningful tag, run as a non-root user where feasible, and retest the container with Lab 03’s collection.
 
 Read [Docker Guide](../03_Guides/Docker_Guide.md) before cleanup. Never run broad pruning commands on a shared machine unless you understand what they remove.
+
+---
+## Bản dịch tiếng Việt
+
+Docker có giá trị khi service chạy nhất quán trên máy khác. Nộp Dockerfile, `.dockerignore`, `.env.example`, run guide, contract, collection/environment, report và minh chứng build/run/health. Build tag rõ, ưu tiên non-root, chạy lại test Lab 03 trên container và không cleanup diện rộng trên máy dùng chung.

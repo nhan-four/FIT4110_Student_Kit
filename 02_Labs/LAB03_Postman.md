@@ -5,3 +5,8 @@ Use [FIT4110_lab03_postman_mock_testing](https://github.com/TrangLe1912/FIT4110_
 Required evidence: exported collection and environments (without secrets), test-case matrix, consumer/provider handshake, Newman report, and completed reliability checklist. Cover health, happy path, authentication, invalid payloads, boundary cases, and a consumer-side mock smoke test where applicable.
 
 Keep URLs and tokens in environment variables; never hard-code or commit a real secret. Run `npm install`, start Prism as directed, then run Newman. CI is useful feedback, but the graded artefact is the reproducible repository ZIP.
+
+---
+## Bản dịch tiếng Việt
+
+Biến contract thành collection/test chạy được trên `mock` và `local`. Nộp collection, environment không chứa secret, test matrix, handshake, Newman report và checklist. Kiểm thử health, luồng đúng, auth, payload sai, boundary và consumer smoke test. Dùng environment variable cho URL/token; ZIP repository là artefact chấm điểm.

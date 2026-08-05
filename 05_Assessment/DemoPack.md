@@ -10,3 +10,7 @@ Prepare a `demo/` folder or README section that lets a grader understand the sys
 6. **Evidence and limitations** — paths to reports/screenshots and honest known issues.
 
 Record the Git commit SHA used for the demo. A live service is optional evidence; the repository must still stand on its own.
+
+## Bản dịch tiếng Việt
+
+Demo pack cần nêu bài toán/boundary, contract, lệnh chạy clone sạch, health và request kiểm chứng, tích hợp, đường dẫn evidence và giới hạn. Ghi commit SHA dùng để demo; service live chỉ là minh chứng bổ sung, repository vẫn phải tự đủ để chấm.
