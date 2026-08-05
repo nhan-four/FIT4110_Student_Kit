@@ -17,3 +17,9 @@ flowchart LR
 8. **Submit that one repository URL** in the course Google Sheet when instructed. The instructor grades the downloaded ZIP of the repository.
 
 Never submit a local folder, another team’s URL, an expired temporary link, or a repository that requires the grader to request access.
+
+---
+
+## Bản dịch tiếng Việt
+
+Đây là quy trình chung cho mọi Lab để giảng viên có thể chạy lại bài. Clone starter công khai, cài môi trường, tạo minh chứng, hoàn thành Lab, rồi thêm nội dung vào **một** repository public duy nhất tên `FIT4110_<MãSinhViên>`. Mỗi Lab nằm trong thư mục riêng; không sao chép thư mục `.git` của starter vào portfolio. Commit/push sau từng Lab và chỉ nộp một URL repository trong Google Sheet. Không nộp thư mục local, URL của người khác hoặc repository cần cấp quyền.

@@ -11,3 +11,9 @@
 7. Paste this same repository URL into the course Google Sheet before the deadline.
 
 The single submitted URL identifies the whole semester portfolio. Do not replace repository history after submission without instructor permission. The instructor downloads the repository ZIP; absent generated reports, screenshots, or run instructions are therefore missing evidence.
+
+---
+
+## Bản dịch tiếng Việt
+
+Trước khi nộp, chạy lại lệnh kiểm tra của Lab, hoàn thành checklist/known issues, kiểm tra không có secret và push commit mới nhất lên repository public duy nhất `FIT4110_<MãSinhViên>`. Bảo đảm Lab hiện tại nằm đúng thư mục, các Lab cũ còn nguyên và repository tải ZIP được không cần cấp quyền. Nộp cùng URL này trong Google Sheet. URL đó đại diện cho toàn bộ portfolio học kỳ; không rewrite lịch sử sau khi nộp nếu chưa được giảng viên cho phép.

@@ -26,3 +26,9 @@ Set `origin` only once, when you create the portfolio repository: `https://githu
 Use small, meaningful commits: `docs: define service boundary`; `contract: sign OpenAPI v1`; `test: add invalid payload cases`; `docker: package service`. Do not commit `.env`, tokens, private datasets, or giant generated dependency folders.
 
 If you must preserve upstream updates, add it explicitly: `git remote add upstream <public-source-URL>`; never push to `upstream`.
+
+---
+
+## Bản dịch tiếng Việt
+
+Tạo một repository public duy nhất cho cả học kỳ: `FIT4110_<MãSinhViên>`. Trong repository đó, mỗi Lab có một thư mục riêng. Hoàn thành starter Lab ở nơi khác, sau đó sao chép nội dung cần nộp vào thư mục Lab tương ứng, không mang theo `.git` của starter. Chỉ cấu hình `origin` một lần cho repository portfolio; dùng commit rõ nghĩa và không commit `.env`, token, dữ liệu riêng tư hoặc thư mục dependency sinh tự động. Nếu cần cập nhật từ starter, thêm nó dưới tên `upstream` và tuyệt đối không push lên đó.
