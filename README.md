@@ -43,7 +43,7 @@ flowchart TD
   D --> E[Add the lab folder]
   E --> F[Push updates]
   F --> G[Submit repository URL in Google Sheet]
-  G --> H[Instructor downloads ZIP for grading]
+  G --> H[Submission recorded]
 ```
 
 Read [Git Guide](03_Guides/Git_Guide.md) and [Submission](03_Guides/Submission.md) for exact commands.
@@ -67,7 +67,7 @@ Read [Git Guide](03_Guides/Git_Guide.md) and [Submission](03_Guides/Submission.m
 
 ## Tổng quan học phần
 
-Đây là bộ hướng dẫn chính thức cho **FIT4110 – Dịch vụ kết nối & Công nghệ nền tảng**. Student Kit là bản đồ học phần; các repository Lab công khai của TrangLe1912 là nguồn chính thức cho nhiệm vụ kỹ thuật, artefact và tiêu chí riêng của từng bài. Kit này chỉ chủ động thay đổi quy trình nộp bài. Mục tiêu là tạo ra bài làm có thể chạy lại, tích hợp và chấm từ một bản ZIP.
+Đây là bộ hướng dẫn chính thức cho **FIT4110 – Dịch vụ kết nối & Công nghệ nền tảng**. Student Kit là bản đồ học phần; các repository Lab công khai của TrangLe1912 là nguồn chính thức cho nhiệm vụ kỹ thuật, artefact và tiêu chí riêng của từng bài. Kit này chỉ chủ động thay đổi quy trình nộp bài. Mục tiêu là tạo ra bài làm có thể chạy lại và tích hợp được.
 
 ## Vì sao sinh viên Khoa học máy tính / AI cần học nội dung này?
 
@@ -86,7 +86,7 @@ Lab 01 kiểm tra môi trường và ranh giới service; Lab 02 xây contract R
 
 ## Quy trình nộp bài
 
-Clone starter → hoàn thành môi trường và Lab → tạo minh chứng → thêm vào thư mục Lab trong repository `FIT4110_<MãSinhViên>` → push → nộp **một URL** Google Sheet → giảng viên tải ZIP để chấm.
+Clone starter → hoàn thành môi trường và Lab → tạo minh chứng → thêm vào thư mục Lab trong repository `FIT4110_<MãSinhViên>` → push → nộp **một URL** theo hướng dẫn của học phần.
 
 ## Nguyên tắc học phần
 
