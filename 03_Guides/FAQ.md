@@ -1,18 +1,31 @@
 # FAQ
 
-**Do I work in this repository?** Use this kit for instructions and templates. Clone the matching public lab repository for the lab implementation.
+**Do I work in this repository?** Use this Kit for instructions and templates. Clone the matching public lab repository separately for implementation, then copy the completed work into your portfolio without the starter's `.git` directory.
 
-**May I make my repo private?** No, unless the course announces an exception. The submitted repository URL must be accessible to the intended course reviewers.
+**May I make my portfolio private?** No. Your `FIT4110_<MãSinhViên>` portfolio must be public and accessible through its submitted URL.
 
-**Can I reuse a previous lab repository?** Yes when the lab guide says it builds on prior artefacts, but preserve the required structure and clearly identify the lab deliverables.
+**Do GitHub Actions copied from a starter run in my lab folder?** No. Workflows are only recognised in the portfolio root's `.github/workflows/`, and the source workflows assume their own repository-root paths. Run required commands locally and keep their evidence.
 
-**Can I remove failed experiments?** Keep useful evidence and explain unresolved issues. Do not commit secrets or huge unnecessary artefacts.
+**What if I work in a team?** Shared artefacts must be identical to the agreed version for the relevant team members. Each student stores that version in their own portfolio and adds their own `CONTRIBUTION.md`.
 
-**What is the difference between a mock and the real service?** A mock validates contract-driven interaction. A real service validates authentication, business logic, persistence, and operational behavior.
+**What is the difference between a mock and the real service?** A mock validates contract-driven interaction. A real service validates authentication, business logic, persistence, and operational behaviour.
 
-**What if I work in a team?** Follow the instructor’s team policy, but the submitted URL must contain the required artefacts and evidence for the assessed scope.
+**Can I correct an earlier lab?** Yes. Keep its history and make a new commit explaining the correction; do not silently replace earlier work.
 
 ---
-## Bản dịch tiếng Việt
 
-**Tôi làm trong repository nào?** Dùng Student Kit để đọc hướng dẫn; Lab starter được clone để thực hành và nội dung hoàn chỉnh được sao chép vào thư mục Lab trong một repository `FIT4110_<MãSinhViên>`. **Có được để private không?** Không, trừ khi học phần thông báo khác. **Mock có phải service thật không?** Không; mock kiểm tra tương tác theo contract, còn service thật mới kiểm tra auth, nghiệp vụ, database và vận hành. **Nếu làm nhóm?** Theo chính sách lớp, nhưng URL duy nhất phải chứa đủ artefact và minh chứng cần thiết.
+## Bản tiếng Việt
+
+# Câu hỏi thường gặp
+
+**Tôi làm trực tiếp trong repository này phải không?** Dùng Kit để đọc hướng dẫn và lấy template. Clone riêng public lab repository tương ứng để triển khai, sau đó sao chép bài đã hoàn thành vào portfolio mà không mang theo thư mục `.git` của starter.
+
+**Có được để portfolio private không?** Không. Portfolio `FIT4110_<MãSinhViên>` phải public và truy cập được qua URL đã nộp.
+
+**GitHub Actions sao chép từ starter có chạy trong thư mục Lab không?** Không. Workflow chỉ được GitHub nhận diện tại `.github/workflows/` ở root của portfolio, còn workflow nguồn giả định path tại root repository của chính starter. Hãy chạy các lệnh bắt buộc tại local và lưu minh chứng.
+
+**Nếu làm theo nhóm thì sao?** Artefact chung phải giống bản đã thống nhất đối với các thành viên liên quan. Mỗi sinh viên lưu bản đó trong portfolio riêng và thêm `CONTRIBUTION.md` của mình.
+
+**Mock khác service thật như thế nào?** Mock kiểm tra tương tác theo contract. Service thật kiểm tra authentication, business logic, persistence và hành vi vận hành.
+
+**Có được sửa Lab trước không?** Có. Giữ nguyên lịch sử và tạo commit mới giải thích phần sửa; không âm thầm thay thế bài đã làm.

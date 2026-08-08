@@ -1,19 +1,31 @@
 # Submission checklist
 
 - [ ] Required lab artefacts are present and named clearly.
-- [ ] Verification command was run and output/report is included.
+- [ ] Verification commands were run and output/report is included.
 - [ ] Evidence is readable from the submitted repository.
 - [ ] `known-issues.md` reflects remaining limitations.
 - [ ] No `.env`, token, credential, or private data is tracked.
 - [ ] README explains how another person can run and verify the work.
+- [ ] Shared artefacts match the agreed team version.
+- [ ] `CONTRIBUTION.md` identifies my individual work.
 - [ ] `origin` points to my one public semester repository: `FIT4110_<MãSinhViên>`.
 - [ ] Latest commit is pushed.
-- [ ] The same semester repository URL is submitted through the course Google Sheet.
+- [ ] The same portfolio URL is submitted through the course submission channel.
 
-## Bản dịch tiếng Việt
+---
 
-- [ ] Đủ artefact và đúng tên thư mục Lab.
-- [ ] Có report/minh chứng chạy được từ clone sạch.
-- [ ] Không commit secret hoặc `.env`.
-- [ ] `origin` trỏ tới `FIT4110_<MãSinhViên>` public.
-- [ ] Đã push commit mới nhất và nộp cùng một URL Google Sheet.
+## Bản tiếng Việt
+
+# Checklist nộp bài
+
+- [ ] Đủ artefact bắt buộc của Lab và tên file rõ ràng.
+- [ ] Đã chạy các lệnh kiểm tra và có output/report đi kèm.
+- [ ] Minh chứng đọc được từ repository đã nộp.
+- [ ] `known-issues.md` phản ánh các giới hạn còn lại.
+- [ ] Không có `.env`, token, credential hoặc dữ liệu riêng tư được track.
+- [ ] README giải thích để người khác chạy và kiểm tra bài.
+- [ ] Artefact chung đúng với bản đã thống nhất của nhóm.
+- [ ] `CONTRIBUTION.md` xác định phần việc cá nhân của tôi.
+- [ ] `origin` trỏ tới repository public duy nhất cho học kỳ: `FIT4110_<MãSinhViên>`.
+- [ ] Đã push commit mới nhất.
+- [ ] Đã nộp cùng một URL portfolio theo kênh nộp bài của học phần.

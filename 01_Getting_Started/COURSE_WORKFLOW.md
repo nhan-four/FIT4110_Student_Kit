@@ -1,25 +1,63 @@
 # Course workflow
 
-This is the single workflow for every lab. Do it in this order so another person can reproduce your work.
+Create your portfolio before Lab 01. This makes its commit history and generated `git-log.txt` your own work history rather than the starter repository's history.
 
 ```mermaid
 flowchart LR
-  C[Clone starter] --> S[Setup] --> E[Evidence] --> L[Lab work] --> R[One student repository] --> M[Add lab folder] --> P[Push updates] --> G[Submit one URL]
+  P["Create FIT4110_MSSV portfolio"] --> C["Clone starter separately"]
+  C --> W["Complete and verify locally"] --> X["Remove starter .git"]
+  X --> A["Copy into matching lab folder"] --> D["Add contribution record"]
+  D --> U["Commit and push portfolio"] --> S["Submit one URL"]
 ```
 
-1. **Clone** the stated public lab repository. Do not edit the source repository on GitHub.
-2. **Set up** tools and run the baseline command before changing code.
-3. **Collect evidence** as you go: commands, reports, screenshots, and known issues.
-4. **Complete the lab** and tick its checklist.
-5. **Create one empty public personal GitHub repository** once for the whole semester, named `FIT4110_<MãSinhViên>` (for example, `FIT4110_11223344`).
-6. **Add each completed lab to its own folder** inside that repository: `01_Setup/`, `02_OpenAPI/`, `03_Postman/`, `04_Docker/`, `05_Compose/`, and `06_Plugathon/`. Do not place a Git repository inside another Git repository; copy the completed starter contents but exclude the starter's `.git` folder.
-7. **Commit and push after every lab**. The same repository URL remains your submission URL throughout the semester.
-8. **Submit that one repository URL** through the course submission channel when instructed.
+## At the start of the semester
 
-Never submit a local folder, another team’s URL, an expired temporary link, or a repository that requires access to be requested.
+1. Create one empty, public GitHub repository named `FIT4110_<MãSinhViên>`.
+2. Clone that repository locally and create these folders: `01_Setup/`, `02_OpenAPI/`, `03_Postman/`, `04_Docker/`, `05_Compose/`, and `06_Plugathon/`.
+3. Make your first commit. From this point onward, your portfolio is the only repository you push for this course.
+
+## For every lab
+
+1. Clone the stated public starter into a separate temporary working folder. Do not edit the source repository on GitHub.
+2. Complete the lab and run its required commands locally from that working copy.
+3. Remove the starter's `.git` directory, then copy the completed contents into the matching folder in your portfolio. For Lab 01, run the evidence scripts from `01_Setup/` **after** the copy so its `git-log.txt` records your portfolio history.
+4. Do not place a Git repository inside another Git repository. Source `.github/workflows/` files are written for the starter repository root; when copied under a lab folder they do not run and must not be used as completion evidence.
+5. Run the lab's lint, test, build, and health checks locally. Store the resulting reports, screenshots, and known issues in that lab folder.
+6. When an artefact is shared by a team, copy the agreed version into every relevant personal portfolio and add `CONTRIBUTION.md` using the [team contribution template](../04_Templates/team-contribution-template.md).
+7. Commit and push after each lab. Submit the same portfolio URL through the course submission channel when instructed.
+
+After a lab's submission deadline, do not rewrite its Git history or silently replace its artefacts. Record any correction in a new commit and explain it in the affected lab's `CONTRIBUTION.md` or `known-issues.md`.
 
 ---
 
-## Bản dịch tiếng Việt
+## Bản tiếng Việt
 
-Đây là quy trình chung cho mọi Lab để người khác có thể chạy lại bài. Clone starter công khai, cài môi trường, tạo minh chứng, hoàn thành Lab, rồi thêm nội dung vào **một** repository public duy nhất tên `FIT4110_<MãSinhViên>`. Mỗi Lab nằm trong thư mục riêng; không sao chép thư mục `.git` của starter vào portfolio. Commit/push sau từng Lab và chỉ nộp một URL repository theo kênh của học phần. Không nộp thư mục local, URL của người khác hoặc repository cần cấp quyền.
+# Quy trình học phần
+
+Tạo portfolio trước Lab 01. Việc này giúp commit history và `git-log.txt` được sinh ra phản ánh lịch sử làm bài của chính sinh viên, thay vì lịch sử của starter repository.
+
+```mermaid
+flowchart LR
+  P["Tạo portfolio FIT4110_MSSV"] --> C["Clone riêng starter"]
+  C --> W["Hoàn thành và kiểm tra local"] --> X["Bỏ .git của starter"]
+  X --> A["Sao chép vào thư mục Lab"] --> D["Thêm ghi nhận đóng góp"]
+  D --> U["Commit và push portfolio"] --> S["Nộp một URL"]
+```
+
+## Đầu học kỳ
+
+1. Tạo một GitHub repository public rỗng tên `FIT4110_<MãSinhViên>`.
+2. Clone repository này về máy và tạo các thư mục: `01_Setup/`, `02_OpenAPI/`, `03_Postman/`, `04_Docker/`, `05_Compose/` và `06_Plugathon/`.
+3. Tạo commit đầu tiên. Từ thời điểm này, portfolio là repository duy nhất sinh viên push cho học phần.
+
+## Với mỗi Lab
+
+1. Clone starter công khai của Lab vào một thư mục làm việc tạm riêng. Không chỉnh sửa source repository trên GitHub.
+2. Hoàn thành Lab và chạy các lệnh bắt buộc ở local từ working copy đó.
+3. Bỏ thư mục `.git` của starter, sau đó sao chép nội dung đã hoàn thành vào thư mục Lab tương ứng trong portfolio. Với Lab 01, chạy evidence scripts từ `01_Setup/` **sau** khi sao chép để `git-log.txt` ghi lịch sử của portfolio.
+4. Không đặt một Git repository bên trong Git repository khác. Các file `.github/workflows/` của starter được viết cho root của starter; khi nằm dưới thư mục Lab, chúng không chạy và không được dùng làm minh chứng hoàn thành.
+5. Chạy lint, test, build và health check của Lab tại local. Lưu report, ảnh chụp và known issues vào thư mục Lab đó.
+6. Khi artefact là kết quả chung của nhóm, sao chép bản đã thống nhất vào mọi portfolio cá nhân liên quan và thêm `CONTRIBUTION.md` theo [team contribution template](../04_Templates/team-contribution-template.md).
+7. Commit và push sau mỗi Lab. Nộp cùng một URL portfolio theo kênh nộp bài của học phần khi được yêu cầu.
+
+Sau mốc nộp của một Lab, không rewrite Git history hoặc âm thầm thay artefact của Lab đó. Mọi sửa đổi phải có commit mới và được giải thích trong `CONTRIBUTION.md` hoặc `known-issues.md` của Lab liên quan.

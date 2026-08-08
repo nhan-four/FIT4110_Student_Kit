@@ -1,6 +1,6 @@
 # FIT4110 — Student Kit
 
-Official, semester-long guide for **FIT4110 – Dịch vụ kết nối & Công nghệ nền tảng**. This kit is the course map, not a replacement for the lab repositories. For technical tasks, artefacts, and lab-specific grading criteria, the linked TrangLe1912 repository is authoritative; this Kit intentionally changes only the submission workflow.
+Official, semester-long guide for **FIT4110 – Dịch vụ kết nối & Công nghệ nền tảng**. This kit is the course map, not a replacement for the lab repositories. For technical tasks, artefacts, and lab-specific completion criteria, the linked TrangLe1912 repository is authoritative; this Kit intentionally changes only the submission workflow.
 
 ## Why this matters for CS / AI students
 
@@ -15,35 +15,32 @@ flowchart LR
 
 ## Quick start
 
-1. Read [Session 0](01_Getting_Started/SESSION0_Preparation.md) and complete the setup checks.
-2. Follow [the course workflow](01_Getting_Started/COURSE_WORKFLOW.md) before beginning any lab.
-3. Open the matching lab guide below; clone its public starter repository.
-4. Create one portfolio repository named `FIT4110_<MãSinhViên>`, keep every lab in its own folder, and submit that one URL through the course Google Sheet.
+1. Create one empty public portfolio repository named `FIT4110_<MãSinhViên>` and clone it locally **before Lab 01**.
+2. Read [Session 0](01_Getting_Started/SESSION0_Preparation.md) and follow [the course workflow](01_Getting_Started/COURSE_WORKFLOW.md).
+3. Clone each public lab starter separately, then copy its completed contents into the matching portfolio folder without the starter's `.git` directory.
+4. Keep every lab in its own folder and submit the same portfolio URL through the course submission channel.
 
 ## Lab ecosystem
 
 | Stage | Use this public source repository | Student outcome |
 |---|---|---|
 | Lab 01 | [FIT4110_setup](https://github.com/TrangLe1912/FIT4110_setup) | environment evidence + service boundary |
-| Lab 02 | [FIT4110_lab02_openapi](https://github.com/TrangLe1912/FIT4110_lab02_openapi) | OpenAPI contract + negotiation record |
+| Lab 02 | [FIT4110_lab02_openapi](https://github.com/TrangLe1912/FIT4110_lab02_openapi) | REST OpenAPI or preliminary event contract + negotiation record |
 | Lab 03 | [FIT4110_lab03_postman_mock_testing](https://github.com/TrangLe1912/FIT4110_lab03_postman_mock_testing) | Postman tests, mock, Newman report |
 | Lab 04 | [FIT4110_lab04_docker_packaging](https://github.com/TrangLe1912/FIT4110_lab04_docker_packaging) | Dockerfile, runnable image, evidence |
-| Lab 05 | [FIT4110_lab05_docker_compose](https://github.com/TrangLe1912/FIT4110_lab05_docker_compose) | reproducible multi-service stack |
+| Lab 05 | [FIT4110_lab05_docker_compose](https://github.com/TrangLe1912/FIT4110_lab05_docker_compose) | completed dependency-aware Compose stack |
 | Lab 06 | No separate public starter currently listed | integration handshake + Plug-a-thon evidence |
-
-The instructor-only setup repository is intentionally not required by students.
 
 ## Submission in one view
 
 ```mermaid
 flowchart TD
-  A[Clone public lab repository] --> B[Complete setup and lab]
-  B --> C[Generate evidence]
-  C --> D[One student repository]
-  D --> E[Add the lab folder]
-  E --> F[Push updates]
-  F --> G[Submit repository URL in Google Sheet]
-  G --> H[Submission recorded]
+  A[Create one portfolio before Lab 01] --> B[Clone public starter separately]
+  B --> C[Complete and verify locally]
+  C --> D[Remove starter .git and copy lab folder]
+  D --> E[Record contribution]
+  E --> F[Push portfolio update]
+  F --> G[Submit one repository URL]
 ```
 
 Read [Git Guide](03_Guides/Git_Guide.md) and [Submission](03_Guides/Submission.md) for exact commands.
@@ -54,6 +51,7 @@ Read [Git Guide](03_Guides/Git_Guide.md) and [Submission](03_Guides/Submission.m
 - [Lab guides](02_Labs/)
 - [Guides and troubleshooting](03_Guides/)
 - [Student templates](04_Templates/)
+- [Team artefact and contribution template](04_Templates/team-contribution-template.md)
 - [Assessment and demo pack](05_Assessment/)
 - [FAQ](03_Guides/FAQ.md)
 
@@ -75,18 +73,45 @@ Một mô hình chính xác, notebook hoặc pipeline dữ liệu chưa phải l
 
 ## Bắt đầu nhanh
 
-1. Đọc Session 0 và hoàn thành kiểm tra môi trường.
-2. Làm theo quy trình học phần trước khi bắt đầu Lab.
-3. Clone repository starter công khai của Lab tương ứng.
-4. Tạo **một** repository public duy nhất tên `FIT4110_<MãSinhViên>`; lưu từng Lab trong thư mục riêng và nộp cùng một URL qua Google Sheet.
+1. Tạo một repository portfolio public rỗng tên `FIT4110_<MãSinhViên>` và clone về máy **trước Lab 01**.
+2. Đọc Session 0 và làm theo [quy trình học phần](01_Getting_Started/COURSE_WORKFLOW.md).
+3. Clone riêng starter công khai của từng Lab, sau đó sao chép nội dung đã hoàn thành vào thư mục Lab tương ứng trong portfolio, không mang theo thư mục `.git` của starter.
+4. Giữ mỗi Lab trong một thư mục riêng và nộp cùng một URL portfolio theo kênh nộp bài của học phần.
 
 ## Hệ sinh thái Lab
 
-Lab 01 kiểm tra môi trường và ranh giới service; Lab 02 xây contract REST OpenAPI hoặc event contract sơ bộ tùy loại cặp; Lab 03 kiểm thử bằng Postman/mock/Newman; Lab 04 đóng gói Docker; Lab 05 chạy nhiều service bằng Compose; Lab 06 tích hợp Plug-a-thon theo thông báo của giảng viên. Repository dành cho giảng viên không thuộc phạm vi sinh viên.
+| Giai đoạn | Repository nguồn công khai | Kết quả sinh viên |
+|---|---|---|
+| Lab 01 | [FIT4110_setup](https://github.com/TrangLe1912/FIT4110_setup) | minh chứng môi trường + service boundary |
+| Lab 02 | [FIT4110_lab02_openapi](https://github.com/TrangLe1912/FIT4110_lab02_openapi) | REST OpenAPI hoặc event contract sơ bộ + negotiation record |
+| Lab 03 | [FIT4110_lab03_postman_mock_testing](https://github.com/TrangLe1912/FIT4110_lab03_postman_mock_testing) | Postman test, mock, Newman report |
+| Lab 04 | [FIT4110_lab04_docker_packaging](https://github.com/TrangLe1912/FIT4110_lab04_docker_packaging) | Dockerfile, image chạy được, minh chứng |
+| Lab 05 | [FIT4110_lab05_docker_compose](https://github.com/TrangLe1912/FIT4110_lab05_docker_compose) | Compose stack hoàn chỉnh theo dependency của service |
+| Lab 06 | Chưa có public starter riêng | integration handshake + Plug-a-thon evidence |
 
 ## Quy trình nộp bài
 
-Clone starter → hoàn thành môi trường và Lab → tạo minh chứng → thêm vào thư mục Lab trong repository `FIT4110_<MãSinhViên>` → push → nộp **một URL** theo hướng dẫn của học phần.
+```mermaid
+flowchart TD
+  A["Tạo một portfolio trước Lab 01"] --> B["Clone riêng starter công khai"]
+  B --> C["Hoàn thành và kiểm tra tại local"]
+  C --> D["Bỏ .git của starter, sao chép thư mục Lab"]
+  D --> E["Ghi đóng góp cá nhân"]
+  E --> F["Push portfolio"]
+  F --> G["Nộp một URL repository"]
+```
+
+Đọc [Git Guide](03_Guides/Git_Guide.md) và [Submission](03_Guides/Submission.md) để xem lệnh và checklist chi tiết.
+
+## Điều hướng
+
+- [Bắt đầu học phần](01_Getting_Started/LEARNING_MAP.md)
+- [Hướng dẫn Lab](02_Labs/)
+- [Hướng dẫn và gỡ lỗi](03_Guides/)
+- [Template sinh viên](04_Templates/)
+- [Template artefact nhóm và đóng góp cá nhân](04_Templates/team-contribution-template.md)
+- [Assessment và demo pack](05_Assessment/)
+- [FAQ](03_Guides/FAQ.md)
 
 ## Nguyên tắc học phần
 
